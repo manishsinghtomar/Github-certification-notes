@@ -13,6 +13,8 @@ cd /workspaces/tmp/new-project
 git init
 touch Readme.md
 open Readme.md
+git status
+git add Readme.md
 # makes changes to readme.md
 git commit -a -m "add readme file" 
 ```
