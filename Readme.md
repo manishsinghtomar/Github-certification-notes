@@ -98,3 +98,10 @@ Showing the contents of our .gitconfig file
 ```
 git config --list
 ```
+
+When you first install Git on a machine you are suppose to set up your name and email
+
+```sh
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
