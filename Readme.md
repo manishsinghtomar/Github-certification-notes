@@ -41,6 +41,17 @@ git clone https://github.com/Pradeep-Pandey13/CheatSheets-HTML-CSS-JavaScript.gi
 
 ## Commits
 
+when we want to commit code we can write git commit which will open up the commit edit message in the editor of choice.
+
+```sh
+git commit
+```
+
+Set the global editor
+```
+git config --global core.editor emacs
+```
+
 ## Branches
 
 ## Remotes
@@ -48,3 +59,42 @@ git clone https://github.com/Pradeep-Pandey13/CheatSheets-HTML-CSS-JavaScript.gi
 ## Stashing 
 
 ## Merging
+
+## Add 
+
+when we want to stage changes that will be included in the commit
+we can use the . to add all possible files. 
+
+```
+git add Readme.md
+git add .
+```
+
+## Reset
+
+Reset allows you to move staged changes to be unstaged.
+This is useful when you  to revert all files not to be commited
+
+```
+git add .
+git reset
+```
+
+> git reset will revert a git add.
+
+## Status 
+
+Git status shows you what files will or will not be commited.
+
+```
+git status
+```
+
+## Gitconfig file
+
+The gitconfig file is what stores your global configurations for git such as email, name, editor and more.
+
+Showing the contents of our .gitconfig file
+```
+git config --list
+```
