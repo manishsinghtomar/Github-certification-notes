@@ -52,6 +52,11 @@ Set the global editor
 git config --global core.editor emacs
 ```
 
+Make a commit and commit message without opening an editor 
+```sh
+git commit -m "add another exclamation"
+```
+
 ## Branches
 
 ## Remotes
@@ -104,4 +109,18 @@ When you first install Git on a machine you are suppose to set up your name and 
 ```sh
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+```
+
+## Log
+
+git log will show recent git commits to the git tree
+
+## Push
+
+When we want to push a repo to our remote origin
+
+```
+git push
+
+
 ```
