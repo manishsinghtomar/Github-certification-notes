@@ -72,6 +72,27 @@ eval `ssh-agent`
 ssh-agent /home/andrew/ .ssh/alt-github_id_rsa
 ```
 
+### Github CLI
+
+Install the CLI
+
+eg. Linux (ubuntu)
+```sh
+(type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+        && out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+        && cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+```
+
+```
+gh auth login
+gh repo clone andrew-wc-brown/Github-Examples
+```
+
 ## Commits
 
 when we want to commit code we can write git commit which will open up the commit edit message in the editor of choice.
@@ -91,6 +112,23 @@ git commit -m "add another exclamation"
 ```
 
 ## Branches
+
+List of branches
+
+```
+git branch
+```
+
+Create a new branch
+```
+git branch branch-name
+```
+
+Checkout the branch
+
+```
+git checkout dev
+```
 
 ## Remotes
 
