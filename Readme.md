@@ -34,9 +34,42 @@ cd /workspace/tmp
 
 ### HTPPS
 
-```md
+```sh
 git clone https://github.com/Pradeep-Pandey13/CheatSheets-HTML-CSS-JavaScript.git
+cd Github-Examples
+```
 
+>You'll need to generate a Personal Access Token (PAT)
+https://github.com/setting/token
+
+You will use the PAT as your password when you login
+
+- Give it access to Contents for Commits
+
+### SSH
+
+```ssh
+git@github.com:andrew-wc-brown/Github-Examples.git
+cd GitHib-Examples
+```
+
+we will need to create our own SSH
+
+```sh
+sshe-keygen -t rsa
+```
+
+We can test our connection here:
+
+```
+ssh -T git@github.com
+```
+
+For WSL users and if you create a non default key you might need to add it
+
+```sh
+eval `ssh-agent`
+ssh-agent /home/andrew/ .ssh/alt-github_id_rsa
 ```
 
 ## Commits
