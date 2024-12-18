@@ -132,9 +132,29 @@ git checkout dev
 
 ## Remotes
 
+we can add remote but often you will just add remote via upsteam when adding a branch
+
+```sh
+git remote add ...
+git branch -u origin new-feature
+```
+
 ## Stashing 
 
+```
+git stash list
+git stash
+git stash save my-name
+git stash apply
+git stash pop
+```
+
 ## Merging
+
+```
+git checkout dev
+git merge main
+```
 
 ## Add 
 
