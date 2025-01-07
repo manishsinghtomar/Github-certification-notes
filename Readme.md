@@ -19,7 +19,7 @@ git add Readme.md
 git commit -a -m "add readme file" 
 ```
 
-
+### shortcut to open the dev environment in GitHub just press "." (period button) in after opening remote repo
 
 ## Cloning
 
